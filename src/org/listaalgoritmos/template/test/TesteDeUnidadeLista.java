@@ -25,7 +25,7 @@ public class TesteDeUnidadeLista {
 	}
 	
 	@Test
-	public void testQuestaoTresListaUm() {
+	public void testQuestaoTresListaUm() {	
 		Assert.assertEquals(75f, RespostaListaExercicio.calcularAreaTrapezio(20f, 10f, 5f), 0);
 	}
 

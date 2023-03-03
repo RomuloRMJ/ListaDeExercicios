@@ -21,7 +21,8 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularImc(float peso, float altura) 
 	{
-		return 0f;
+		
+		return (float) peso/(altura * altura);
 	}
 	
 	/**
@@ -34,7 +35,7 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularAreaTrapezio(float baseMaior, float baseMenor, float altura) 
 	{	
-		return 0f;
+		return (float) ((baseMaior + baseMenor) * altura) / 2;
 	}
 	
 	/**
@@ -47,7 +48,10 @@ public class RespostaListaExercicio {
 	 */
 	public static int maiorEntreDoisInteiros(int a, int b) 
 	{
-		return 0;
+		if(a > b)
+			return a;
+		else 
+			return b;
 	}
 	
 	/**
@@ -59,7 +63,10 @@ public class RespostaListaExercicio {
 	 */
 	public static boolean verificarParImpar(int numero) 
 	{
-		return false;		
+		if(numero % 2 == 0)
+			return true;
+		else 
+			return false;
 	}
 	
 	/**
@@ -69,7 +76,14 @@ public class RespostaListaExercicio {
 	 * @return media
 	 */
 	public static float calcularMediaNotas(float[] notas) {
-		return 0f;
+		
+		float soma = 0f;
+		for (int i = 0; i < notas.length; i++) {
+			soma = soma + notas[i];
+			
+		} float media = soma / notas.length;
+		
+		return media;
 	}
 	
 	/**
