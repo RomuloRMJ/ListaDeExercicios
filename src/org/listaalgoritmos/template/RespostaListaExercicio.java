@@ -9,7 +9,7 @@ public class RespostaListaExercicio {
 	 * Não se faz necessário implementar dentro do escopo do método.
 	 */
 	public static void main(String[] args) {
-		
+	
 	}
 	
 	/**
@@ -21,8 +21,9 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularImc(float peso, float altura) 
 	{
+		float resultado = peso/(altura * altura);
 		
-		return (float) peso/(altura * altura);
+		return resultado;
 	}
 	
 	/**
@@ -94,8 +95,16 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirArrayInverso(int[] array)
 	{
-		System.out.print("");
-	}
+		for(int i = array.length - 1; i >= 0; i--) {
+			   if(i == 0) {
+				System.out.print(array[i] + " ");
+			 } else {
+				System.out.print(array[i] + ",");
+		   }
+			
+		 }
+		
+	   }
 	
 	/**
 	 * Método deve imprimir os elementos primos de um array de inteiros. O formato da impressão 
@@ -105,6 +114,7 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPrimos(int[] array) 
 	{
+		
 		System.out.print("");
 	}
 	
